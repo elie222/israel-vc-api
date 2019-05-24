@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "@types/node": "^10.12.18"
+  },
+  "dependencies": {
+    "googleapis": "^39.2.0"
+  }
+}
