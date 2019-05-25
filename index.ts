@@ -45,7 +45,7 @@ export default async function(req, res) {
 
   const sheets = await authorizeSheets()
 
-  const sheetsData = await readCol(sheets, `Sheet1!A${start}:F${end}`)
+  const sheetsData = await readCol(sheets, `Sheet1!A${start}:G${end}`)
 
   const {
     data: { values },
