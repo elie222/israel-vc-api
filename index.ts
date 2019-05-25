@@ -51,7 +51,7 @@ export default async function(req, res) {
     data: { values },
   } = sheetsData
 
-  console.log(values)
+  // console.log(values)
 
   res.setHeader('Access-Control-Allow-Origin', '*')
   res.setHeader('Cache-Control', 's-maxage=1, stale-while-revalidate')
