@@ -54,7 +54,9 @@ export default async function(req, res) {
   // console.log(values)
 
   res.setHeader('Access-Control-Allow-Origin', '*')
-  res.setHeader('Cache-Control', 's-maxage=1, stale-while-revalidate')
+  // https://zeit.co/docs/v2/deployments/concepts/cdn-and-global-distribution/
+  // https://zeit.co/blog/serverless-pre-rendering
+  res.setHeader('Cache-Control', 's-maxage=30, stale-while-revalidate=3600, max-age=0')
 
   res.end(JSON.stringify(values))
 }
